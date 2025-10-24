@@ -1,0 +1,7 @@
+For this scenario, the most suitable data structure is a circular queue.
+
+A circular queue efficiently handles continuous message arrivals and processing without wasting memory. In a regular linear queue, once elements are dequeued, the empty spaces at the front cannot be reused, which can lead to overflow even when there is available space. A circular queue solves this by connecting the rear of the queue back to the front, forming a circular structure.
+
+When a message arrives, it is enqueued at the rear of the queue. Once the current message is processed, it is dequeued from the front, and the next message is processed automatically. The circular approach allows the queue to reuse freed spaces and ensures that the application can continuously send and receive messages without running out of space unnecessarily.
+
+In short, a circular queue is ideal for this messaging system because it efficiently manages the flow of messages in a First In, First Out (FIFO) manner, minimizes memory waste, and ensures smooth message handling.
